@@ -60,7 +60,6 @@ public class SellerDaoJDBC implements SellerDao {
 				rs = st.executeQuery();
 				if (rs.next()) {
 					
-					
 					Department dep = new Department();
 					dep.setId(rs.getInt("DepartmentId"));
 					dep.setName(rs.getString("DepName"));
